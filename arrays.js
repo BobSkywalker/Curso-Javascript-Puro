@@ -8,7 +8,7 @@ nome[2] = 10;
 console.log(nome);
 console.log(nome.length);
 
-nome.push({ id: 3 }, false.null, "teste");
+nome.push({ id: 3 }, false, null, "teste");
 console.log(nome);
 
 console.log(nome.pop(2));
