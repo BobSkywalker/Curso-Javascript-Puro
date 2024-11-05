@@ -1,24 +1,24 @@
 // Armazenando uma funçãi em uma variavel
 
-const imprimirSoma = function (a, b) {
-  console.log(a + b);
-};
+const imprimirSoma = function  (a, b) {
+    console.log(a + b)
+}
 
-imprimirSoma(6, 5);
+imprimirSoma(6, 5)
 
 // Armazenando uma função arrow em uma variavel
 
 const soma = (a, b) => {
-  return a + b;
-};
+    return a + b
+}
 
-console.log(soma(2, 7));
+console.log(soma(2, 7))
 
 // Retorno implicito
 
-const subtracao = (a, b) => a - b;
+const subtracao = (a, b) => a - b
 
-console.log(subtracao(5, 10));
+console.log(subtracao(5, 10))
 
-const imprimir2 = (a) => console.log(a);
-imprimir2("Teste");
+const imprimir2 = a => console.log(a)
+imprimir2('Teste')

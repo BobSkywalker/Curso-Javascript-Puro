@@ -8,4 +8,4 @@ function teste() {
   console.log("a =", a);
 }
 
-teste();
+teste()

@@ -4,4 +4,4 @@ function retornarNome() {
   return nome;
 }
 
-retornarNome();
+retornarNome()

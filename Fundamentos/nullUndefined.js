@@ -13,11 +13,11 @@ produto.preço = 3.5;
 
 console.log(produto);
 
-produto.preço = undefined; // Evitar atribuir undefined
-console.log(!!produto.preço);
+produto.preço = undefined // Evitar atribuir undefined 
+console.log(!!produto.preço)
 // delete produto.preço
-console.log(produto);
+console.log(produto)
 
-produto.preço = null; // sem preço
-console.log(!!produto.preço);
-console.log(produto);
+produto.preço = null // sem preço
+console.log(!!produto.preço)
+console.log(produto)
