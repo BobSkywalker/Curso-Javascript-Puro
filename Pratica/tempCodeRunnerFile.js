@@ -1,0 +1,3 @@
+heroiVidas(){
+        return this.vida
+    }
