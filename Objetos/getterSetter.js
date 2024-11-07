@@ -10,5 +10,5 @@ const sequencia = {
 console.log(sequencia.valor, sequencia.valor)
 sequencia.valor = 1000
 console.log(sequencia.valor, sequencia.valor)
-sequencia.valor = 10 00
+sequencia.valor = 1000
 console.log(sequencia.valor, sequencia.valor)
