@@ -1,43 +1,56 @@
 // Game RPG
 
-class heroi{
-    contructor(vida, dano) {
-        this.vida
-        this.dano
-    }
-    health(vida){
-        this.vida = 25
-    }
-    espada(dano){
-        this.dano = 9
-        this.health = this.dano - this.health
-    }
-    escudo(vida){
-        this.vida
-    }
-    recuperarVida(vida){
-        this.health = this.health + Math.random(9, 16)
-    }
-
+class heroi {
+  constructor(vida, dano) {
+    this.vida = vida
+    this.dano = dano
+  }
+  espada(dano) {}
+  escudo(vida) {}
+  recuperarVida(vida) {
+    this.vida = this.vida + Math.random() * 16;
+  }
 }
 
-class boss{
-    constructor(vida, dano){
-        this.vida
-        this.dano
-    }
-    health(vida){
-        this.vida = 50
-    }
-    chute(dano){
-        this.dano = 5
-        this.health = this.dano - this.health
-    }
-    ataque(dano){
-        this.dano = 10
-        this.health = this.dano - this.health
-    }
-    shadow(vida, dano){
-        heroi.espada = 0
-    }
+class boss {
+  constructor(vida, dano) {
+    this.vida = vida
+    this.dano = dano
+  }
+  chute(dano) {}
+  ataque(dano) {}
 }
+
+class criatura {
+  constructor(vida, dano = 5) {
+    this.vida = vida
+    this.dano = dano
+    this.tipo = this.gerarTipo()
+  }
+  ataque(dano) {
+    this.vida = this.vida - this.dano;
+  }
+  fugir() {}
+  gerarTipo() {
+    const tipos = ["voador", "bola", "terrestre", "gordo"];
+    const random = Math.floor(Math.random() * tipos.length)
+    return tipos[random]
+  }
+}
+
+class game {
+  constructor(score) {
+    this.score = score
+  }
+  gerarCriaturas() {
+    
+  }
+  start() {}
+  turn() {}
+  checkUpPlayerStatus() {}
+}
+
+const player = new heroi();
+const vilao = new boss();
+const creature = new criatura();
+
