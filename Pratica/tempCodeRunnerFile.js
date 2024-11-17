@@ -1,3 +1,0 @@
-heroiVidas(){
-        return this.vida
-    }
