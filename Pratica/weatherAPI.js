@@ -1,0 +1,1 @@
+const weather = require('dc339a01aa97ba40e6119ac6892e37d2')
