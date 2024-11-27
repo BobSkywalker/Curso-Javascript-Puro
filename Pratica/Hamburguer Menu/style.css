@@ -25,14 +25,13 @@ header {
   background-color: rgb(119, 156, 226);
   color: rgb(0, 0, 0);
   font-weight: 700;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 50px;
   text-align: center;
-  display: none;
-  transition: 0.5s ease-in-out;
   justify-content: flex-end;
+  padding: 50px;
+  /* animation: slideOut 1s ease-in-out; */
 }
 .content li {
   background-color: aqua;
@@ -41,6 +40,13 @@ header {
   list-style: none;
   border-radius: 10px;
   cursor: pointer;
+}
+.container {
+  display: flex;
+  transition: 0.5s ease-in-out;
+  overflow: hidden;
+  width: 0px;
+  transition: width 0.5s ease-in-out;
 }
 .hamburguer {
   padding: 6px;
@@ -51,11 +57,30 @@ header {
   font-weight: 600;
   cursor: pointer;
 }
-.hamburguer-content {
+.container.active {
   width: 200px;
-  height: 300px;
-  display: flex;
+  /* animation: slideIn 1s ease-in-out; */
 }
-.content.active {
-  display: flex;
+@keyframes slideIn {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
 }
+
+/* .content.deactive {
+   animation: slideOut 1s ease-in-out; 
+  transition: 0.5s ease-in-out;
+  display: none;
+} */
+
+/* @keyframes slideOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-200px);
+  }
+} */
