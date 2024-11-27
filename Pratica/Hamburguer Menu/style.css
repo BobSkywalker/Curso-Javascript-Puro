@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: rgb(12, 69, 175);
+  padding: 1rem 9%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar {
+  text-align: center;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20pt;
+}
+.content {
+  text-align: right;
+  background-color: rgb(119, 156, 226);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  display: none;
+  transition: 0.5s ease-in-out;
+  justify-content: flex-end;
+}
+.content li {
+  background-color: aqua;
+  width: 100px;
+  margin: auto;
+  list-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hamburguer {
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: darkgreen;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hamburguer-content {
+  width: 200px;
+  height: 300px;
+  display: flex;
+}
+.content.active {
+  display: flex;
+}
