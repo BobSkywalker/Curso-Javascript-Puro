@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
+  </head>
+  <style>
+    form {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    textarea {
+      resize: none;
+      overflow-y: hidden;
+      height: 100px;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+  <body>
     <h1>Formulario</h1>
-</body>
+
+    <form action="http://localhost:3030/usuarios" method="POST">
+      <input
+        type="text"
+        name="nome"
+        id="inputName"
+        placeholder="Nome de Usuario"
+      />
+      <input
+        type="password"
+        name="senha"
+        id="inputPassword"
+        placeholder="Senha do Usuario"
+      />
+      <textarea
+        name="Biografia"
+        id="inputBio"
+        placeholder="Biografia"
+      ></textarea>
+      <div>
+        <input type="radio" name="tipo" /> Admin
+        <input type="radio" name="tipo" /> Regular
+      </div>
+      <button id="submit">Incluir</button>
+    </form>
+  </body>
 </html>
