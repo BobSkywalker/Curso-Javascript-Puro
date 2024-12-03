@@ -29,7 +29,8 @@
   <body>
     <h1>Formulario</h1>
 
-    <form action="http://localhost:3030/usuarios" method="POST">
+    <form method="POST">
+      <input type="hidden" name="id" value="3">
       <input
         type="text"
         name="nome"
@@ -51,7 +52,22 @@
         <input type="radio" name="tipo" /> Admin
         <input type="radio" name="tipo" /> Regular
       </div>
-      <button id="submit">Incluir</button>
+      <select name="Estado"> 
+        <option value="#">Estado</option>
+        <option value="SP">SãoPaulo</option>
+        <option value="PR">Paraná</option>
+        <option value="AC">Acre</option>
+      </select>
+      <select name="Interesses" multiple size="5">
+        <option value="JS">JavaScript</option>
+        <option value="JAVA">Java</option>
+        <option value="C++">C++</option>
+        <option value="C#">CSharp</option>
+        <option value="C">C</option>
+        <option value="PYTHON">Python</option>
+      </select>
+      <button id="submit" formaction="http://localhost:3030/usuarios">Incluir</button>
+      <button id="alterar" formaction="http://localhost:3030/usuarios/3">Alterar</button>
     </form>
   </body>
 </html>
